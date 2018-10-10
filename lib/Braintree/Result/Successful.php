@@ -69,7 +69,7 @@ class Braintree_Result_Successful extends Braintree_Instance
    {
        $objects = array();
        foreach ($this->_returnObjectNames as $returnObjectName) {
-           array_push($objects, $this->$returnObjectName);
+           array_push($objects, $returnObjectName);
        }
        return __CLASS__ . '[' . implode(', ', $objects) . ']';
    }
